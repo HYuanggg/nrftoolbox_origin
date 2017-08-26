@@ -112,6 +112,8 @@
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.dfu.NotificationActivity"
 			android:label="@string/dfu_feature_title" />
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.hrs.HRSActivity"
 			android:icon="@drawable/ic_hrs_feature"
@@ -122,6 +124,8 @@
 				<category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
 			</intent-filter>
 		</activity>
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.hts.HTSActivity"
 			android:icon="@drawable/ic_hts_feature"
@@ -135,6 +139,8 @@
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.hts.settings.SettingsActivity"
 			android:label="@string/hts_settings_title" />
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.bpm.BPMActivity"
 			android:icon="@drawable/ic_bpm_feature"
@@ -145,6 +151,8 @@
 				<category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
 			</intent-filter>
 		</activity>
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.gls.GlucoseActivity"
 			android:icon="@drawable/ic_glucose_feature"
@@ -155,6 +163,8 @@
 				<category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
 			</intent-filter>
 		</activity>
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.proximity.ProximityActivity"
 			android:icon="@drawable/ic_proximity_feature"
@@ -166,6 +176,8 @@
 				<category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
 			</intent-filter>
 		</activity>
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.rsc.RSCActivity"
 			android:icon="@drawable/ic_rsc_feature"
@@ -180,6 +192,8 @@
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.rsc.settings.SettingsActivity"
 			android:label="@string/rsc_settings_title" />
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.csc.CSCActivity"
 			android:icon="@drawable/ic_csc_feature"
@@ -194,6 +208,8 @@
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.csc.settings.SettingsActivity"
 			android:label="@string/csc_settings_title" />
+
+
 		<activity
 			android:name="no.nordicsemi.android.nrftoolbox.uart.UARTActivity"
 			android:icon="@drawable/ic_uart_feature"
@@ -206,6 +222,8 @@
 				<category android:name="no.nordicsemi.android.nrftoolbox.LAUNCHER" />
 			</intent-filter>
 		</activity>
+
+
 		<activity android:name="no.nordicsemi.android.nrftoolbox.cgms.CGMSActivity"
 			android:icon="@drawable/ic_cgms_feature"
 			android:label="@string/cgms_feature_title"
@@ -217,9 +235,12 @@
 			</intent-filter>
 		</activity>
 
+
 		<service
 			android:name="no.nordicsemi.android.nrftoolbox.proximity.ProximityService"
 			android:label="@string/proximity_feature_title" />
+
+
 		<service
 			android:name="no.nordicsemi.android.nrftoolbox.dfu.DfuService"
 			android:exported="true"
@@ -258,6 +279,8 @@
 		<service
 			android:name="no.nordicsemi.android.nrftoolbox.uart.UARTService"
 			android:label="@string/uart_feature_title" />
+
+
 		<service android:name=".wearable.MainWearableListenerService">
 			<intent-filter>
 				<action android:name="com.google.android.gms.wearable.DATA_CHANGED" />

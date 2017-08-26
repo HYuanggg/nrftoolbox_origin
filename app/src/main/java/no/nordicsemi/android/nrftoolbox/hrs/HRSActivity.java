@@ -55,7 +55,7 @@ public class HRSActivity extends BleProfileActivity implements HRSManagerCallbac
 
 	private final static int MAX_HR_VALUE = 65535;
 	private final static int MIN_POSITIVE_VALUE = 0;
-	private final static int REFRESH_INTERVAL = 1000; // 1 second interval
+	private final static int REFRESH_INTERVAL = 10; // 1 second interval
 
 	private Handler mHandler = new Handler();
 
@@ -109,6 +109,7 @@ public class HRSActivity extends BleProfileActivity implements HRSManagerCallbac
 		isGraphInProgress = savedInstanceState.getBoolean(GRAPH_STATUS);
 		mCounter = savedInstanceState.getInt(GRAPH_COUNTER);
 		mHrmValue = savedInstanceState.getInt(HR_VALUE);
+
 
 		if (isGraphInProgress)
 			startShowGraph();

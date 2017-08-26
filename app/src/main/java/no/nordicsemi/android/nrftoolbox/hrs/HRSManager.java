@@ -117,7 +117,7 @@ public class HRSManager extends BleManager<HRSManagerCallbacks> {
 
 		@Override
 		public void onCharacteristicNotified(final BluetoothGatt gatt, final BluetoothGattCharacteristic characteristic) {
-			Logger.a(mLogSession, "\"" + HeartRateMeasurementParser.parse(characteristic) + "\" received");
+			Logger.a(mLogSession, "\"" + HeartRateMeasurementParser.parse(characteristic) + "\" received");//Mark:解析
 
 			int hrValue;
 			if (isHeartRateInUINT16(characteristic.getValue()[0])) {

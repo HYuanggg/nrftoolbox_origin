@@ -45,14 +45,14 @@
 				android:name="no.nordicsemi.android.nrftoolbox.uart.UARTLogFragment"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				tools:layout="@layout/fragment_feature_uart_log"/>
+				tools:layout="@layout/fragment_feature_uart_log" />
 
 			<fragment
 				android:id="@+id/fragment_control"
 				android:name="no.nordicsemi.android.nrftoolbox.uart.UARTControlFragment"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				tools:layout="@layout/fragment_feature_uart_control"/>
+				tools:layout="@layout/fragment_feature_uart_control" />
 
 		</android.support.v4.widget.SlidingPaneLayout>
 	</FrameLayout>
